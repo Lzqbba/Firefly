@@ -232,6 +232,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
           updated={entry.data.updated}
           tags={entry.data.tags}
           category={entry.data.category || undefined}
+          showTags={siteConfig.postListLayout.showTags}
           id={entry.id}
         />
         {

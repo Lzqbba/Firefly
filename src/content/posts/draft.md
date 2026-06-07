@@ -1,6 +1,6 @@
+---
 title: 草稿示例
 published: 1970-01-01
-draft: true
 draft: true
 ---
 

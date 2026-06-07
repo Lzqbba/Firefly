@@ -6,14 +6,12 @@ tags: [KaTeX, Math, 示例]
 draft: false
 image: api
 ---
-
 本文展示了 [Firefly](https://github.com/CuteLeaf/Firefly) 主题对 KaTeX 数学公式的渲染支持。
 
 ## 行内公式 (Inline)
 
-行内公式使用单个 `$` 符号包裹。
-
 例如：欧拉公式 $e^{i\pi} + 1 = 0$ 是数学中最优美的公式之一。
+---
 
 质能方程 $E = mc^2$ 也是家喻户晓。
 

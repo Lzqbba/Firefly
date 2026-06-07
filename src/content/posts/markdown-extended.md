@@ -18,15 +18,12 @@ draft: false
 
 ```markdown
 ::github{repo="CuteLeaf/Firefly"}
-```
 
 ## 提醒框(Admonitions)配置
 
 Firefly 采用了 [rehype-callouts](https://github.com/lin-stephanie/rehype-callouts) 插件，支持了三种风格的提醒框主题：`GitHub`、`Obsidian` 和 `VitePress`。您可以在 `src/config/siteConfig.ts` 中进行配置：
 
-```typescript
-// src/config/siteConfig.ts
-export const siteConfig: SiteConfig = {
+draft: false
   // ...
   rehypeCallouts: {
     // 选项: "github" | "obsidian" | "vitepress"

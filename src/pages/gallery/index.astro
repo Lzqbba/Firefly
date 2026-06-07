@@ -22,8 +22,6 @@ const albums = galleryConfig.albums.map((album) => {
 	return { ...album, cover, photoCount: photos.length };
 });
 
-// 收集所有标签用于筛选
-const allTags = [...new Set(albums.flatMap((a) => a.tags || []))].sort();
 ---
 
 <MainGridLayout title={title} description={description}>
@@ -65,24 +63,14 @@ const allTags = [...new Set(albums.flatMap((a) => a.tags || []))].sort();
               class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-(--line-divider) bg-transparent text-neutral-900 dark:text-neutral-100 placeholder-neutral-400 dark:placeholder-neutral-500 focus:border-(--primary) focus:ring-1 focus:ring-(--primary) outline-none transition-all duration-200 text-sm"
             />
           </div>
-          {allTags.length > 0 && (
-            <div class="flex flex-wrap gap-2">
-              <button
-                data-tag="all"
-                class="btn-regular px-3 py-1.5 rounded-lg bg-(--primary) text-white hover:bg-(--primary) transition-colors duration-200 text-sm font-medium"
-              >
-                {i18n(I18nKey.all)}
-              </button>
-              {allTags.map((tag) => (
-                <button
-                  data-tag={tag}
-                  class="btn-regular px-3 py-1.5 rounded-lg bg-(--btn-regular-bg) text-(--btn-content) hover:bg-(--btn-regular-bg-hover) transition-colors duration-200 text-sm font-medium"
-                >
-                  {tag}
-                </button>
-              ))}
-            </div>
-          )}
+          <div class="flex flex-wrap gap-2">
+            <button
+              data-tag="all"
+              class="btn-regular px-3 py-1.5 rounded-lg bg-(--primary) text-white hover:bg-(--primary) transition-colors duration-200 text-sm font-medium"
+            >
+              {i18n(I18nKey.all)}
+            </button>
+          </div>
         </gallery-filter>
       )}
 

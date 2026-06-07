@@ -49,6 +49,11 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		],
 	});
 
+	// 友链页
+	if (siteConfig.pages.friends) {
+		links.push(LinkPreset.Friends);
+	}
+
 	// 关于及其子菜单
 	links.push({
 		name: "关于",
@@ -73,21 +78,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		children: [
 			{
 				name: "GitHub",
-				url: "https://github.com/CuteLeaf/Firefly",
+				url: "https://github.com/Lzqbba/Firefly",
 				external: true,
 				icon: "fa7-brands:github",
-			},
-			{
-				name: "Gitee",
-				url: "https://gitee.com/CuteLeaf/Firefly",
-				external: true,
-				icon: "fa7-brands:gitee",
-			},
-			{
-				name: "QQ交流群",
-				url: "https://qm.qq.com/q/ZGsFa8qX2G",
-				external: true,
-				icon: "fa7-brands:qq",
 			},
 		],
 	});

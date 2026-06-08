@@ -52,7 +52,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 			{
 				name: "开始懂了",
 				artist: "孙燕姿",
-				url: "/assets/music/孙燕姿-开始懂了.flac",
+				url: "/assets/music/孙燕姿 - 开始懂了-converted.mp3",
 				cover: "/assets/music/cover/R-C.png",
 				lrc: "",
 			},
